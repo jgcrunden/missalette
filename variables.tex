@@ -1,0 +1,271 @@
+\usepackage{ifthen}
+
+\ifthenelse{\equal{\translation}{latin}}{
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  % LATIN PRAYERS
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  % Ministers prayers
+  \newcommand\sign{In nómine Patris, et Fílii, et Spíritus Sancti.}
+  \newcommand\greeting{Dóminus vobíscum.}
+  \newcommand\penitentialintro{Fratres, agnoscámus peccáta nostra, ut apti simus ad sacra mystéria celebránda.}
+  \newcommand\absolution{Misereátur nostri omnípotens Deus et, dimissís peccátis nostris, perdúcat nos ad vitam ætérnam}
+  \newcommand\oremus{Oremus}
+  \newcommand\verbumdomini{Verbum Domini.}
+  \newcommand\verbumdominib{Verbum Domini.}
+  \newcommand\lectio{Léctio sancti Evangéllii secúndum N.}
+  \newcommand\exaudi{Christe, audi nos.}
+  \newcommand\benedictusa{Benedíctus es, Dómine, Deus univérsi, quia de tua largitáte accépimus panem, quem tibi offérimus, fructum terræ et óperis mánuum hóminum: ex quo nobis fiet panis vitæ.}
+  \newcommand\benedictusb{Benedíctus es, Dómine, Deus univérsi, quia de tua largitáte accépimus vinum, quod tibi offérimus, fructum vitis et óperis mánuum hóminum, ex quo nobis fiet potus spiritális.}
+  \newcommand\oratefratres{Oráte, fratres: ut meum ac vestrum sacrifícium acceptábile fiat apud Deum Patrem omnipoténtem.}
+  \newcommand\sursum{Sursum corda.}
+  \newcommand\gratiasagamus{Grátias agámus Dómino Deo nostro.}
+  \newcommand\mysterium{Mystérium fídei.}
+  \newcommand\doxology{Per ipsum, et cum ipso, et in ipso, est tibi Deo Patri omnipoténti, in unitáte Spíritus Sancti, omnis honor et glória per ómnia sǽcula sæculórum.}
+  \newcommand\praeceptis{Præcéptis salutáribus móniti, et divína institutióne formáti, audémus dícere:}
+  \newcommand\liberanos{Líbera nos, quǽsumus, Dómine, ab ómnibus malis, da propítius pacem in diébus nostris, ut, ope misericórdiæ tuæ adiúti, et a peccáto simus semper líberi et ab omni perturbatióne secúri: exspectántes beátam spem et advéntum Salvatóris nostri Iesu Christi.}
+  \newcommand\dominejesuchriste{Dómine Iesu Christe, qui dixísti Apóstolis tuis: Pacem relínquo vobis, pacem meam do vobis: ne respícias peccáta nostra, sed fidem Ecclésiæ tuæ; eámque secúndum voluntátem tuam pacificáre et coadunáre dignéris. Qui vivis et regnas in sǽcula sæculórum.}
+  \newcommand\paxdomini{Pax Dómini sit semper vobíscum.}
+  \newcommand\offerte{Offérte vobis pacem.}
+  \newcommand\ecce{Ecce Agnus Dei, ecce qui tollit peccáta mundi. Beáti qui ad cenam Agni vocáti sunt.}
+  \newcommand\benedicat{Benedícat vos omnípotens Deus, Pater, et Fílius, et Spíritus Sanctus.}
+  \newcommand\itemissaest{Ite missa est}
+
+  % Congregation responses
+  \newcommand\etcum{
+    \begin{minipage}[t]{4.0cm}%
+      \gresetinitiallines{0}
+      \gregorioscore{etcum}
+    \end{minipage}%
+  }
+  \newcommand\etcumb{
+    \begin{minipage}[t]{4.0cm}%
+      \gresetinitiallines{0}
+      \gregorioscore{etcum-b}
+    \end{minipage}%
+  }
+  \newcommand\etcumc{
+    \begin{minipage}[t]{4.2cm}%
+      \gresetinitiallines{0}
+      \gregorioscore{etcum-c}
+    \end{minipage}%
+  }
+
+  \newcommand\confiteor{\textbf{{Confíteor Deo omnipoténti\\et vobis, fratres,\\quia peccávi nimis\\cogitatióne, verbo,\\ópere et omissióne\\mea culpa,\\mea culpa,\\mea máxima culpa\\Ideo precor beátam Maríam semper Vírginem,\\omnes Angelos et Sanctos,\\et vos, fratres,\\oráre pro me ad Dóminum Deum nostrum.}}}
+  \newcommand\kyrie{kyrie}
+  \newcommand\gloria{gloria}
+  \newcommand\deogratiasa{
+    \begin{minipage}[t]{2.8cm}%
+      \gresetinitiallines{0}
+      \gregorioscore{deo-gratias-first}
+    \end{minipage}%
+  }
+  \newcommand\deogratiasb{
+    \begin{minipage}[t]{2.8cm}%
+      \gresetinitiallines{0}
+      \gregorioscore{deo-gratias-second}
+    \end{minipage}%
+  }
+  \newcommand\deogratiasc{
+    \begin{minipage}[t]{2.9cm}%
+      \gresetinitiallines{0}
+      \gregorioscore{deo-gratias-third}
+    \end{minipage}%
+  }
+  \newcommand\gloriatibi{
+    \begin{minipage}[t]{4.0cm}%
+      \gresetinitiallines{0}
+      \gregorioscore{gloria-tibi-domine}
+    \end{minipage}%
+  }
+  \newcommand\laustibi{
+    \begin{minipage}[t]{4.5cm}%
+      \gresetinitiallines{0}
+      \gregorioscore{laus-tibi}
+    \end{minipage}%
+  }
+  \newcommand\credo{credo}
+  \newcommand\terogamus{
+    \begin{minipage}[t]{3.9cm}%
+      \gresetinitiallines{0}
+      \gregorioscore{te-rogamus}
+    \end{minipage}%
+  }
+  \newcommand\benedictusdeus{\textbf{Benedíctus Deus in sǽcula.}}
+  \newcommand\suscipiat{\textbf{Suscípiat Dóminus sacrifícium de mánibus tuis ad laudem et glóriam nóminis sui, ad utilitátem quoque nostram totiúsque Ecclésiæ suæ sanctæ.}}
+  \newcommand\habemus{
+    \begin{minipage}[t]{4.2cm}%
+      \gresetinitiallines{0}
+      \gregorioscore{habemus}
+    \end{minipage}%
+  }
+  \newcommand\dignum{
+    \begin{minipage}[t]{3.9cm}%
+      \gresetinitiallines{0}
+      \gregorioscore{dignum}
+    \end{minipage}%
+  }
+  \newcommand\sanctus{sanctus}
+  \newcommand\mortem{
+    \begin{minipage}[t]{\textwidth}%
+      \gresetinitiallines{0}
+      \gregorioscore{mortem}
+    \end{minipage}%
+  }
+  \newcommand\pater{
+    \begin{minipage}[t]{\textwidth}%
+      \gresetinitiallines{0}
+      \gregorioscore{pater}
+    \end{minipage}%
+  }
+  \newcommand\quiatuum{
+    \begin{minipage}[t]{\textwidth}%
+      \gresetinitiallines{0}
+      \gregorioscore{quia-tuum}
+    \end{minipage}%
+  }
+  \newcommand\agnusdei{agnus-dei}
+  \newcommand\dominenonsum{\textbf{Dómine, non sum dignus, ut intres sub téctum meum, sed tantum dic verbo, et sanábitur ánima mea.}}
+}
+{
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  % ENGLISH PRAYERS
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  % Ministers prayers
+  \newcommand\sign{In the name of the Father, and of the Son, and of the Holy Spirit.}
+  \newcommand\greeting{The Lord be with you.}
+  \newcommand\penitentialintro{Brethren, let us acknowledge our sins, and so prepare ourselves to celebrate the sacred mysteries.}
+  \newcommand\absolution{May almighty God have mercy on us, forgive us our sins, and bring us to everlasting life.}
+  \newcommand\oremus{Let us pray}
+  \newcommand\verbumdomini{The word of the Lord.}
+  \newcommand\lectio{A reading from the holy Gospel according to N.}
+  \newcommand\verbumdominib{The Gospel of the Lord.}
+  \newcommand\exaudi{Lord here us.}
+  \newcommand\benedictusa{Blessed are you, Lord God of all creation, for through your goodness we have received the bread we offer you: fruit of the earth and work of human hands, it will become for us the bread of life.}
+  \newcommand\benedictusb{Blessed are you, Lord God of all creation, for through your goodness we have received the wine we offer you: fruit of the vine and work of human hands, it will become our spiritual drink.}
+  \newcommand\oratefratres{Pray, brethren, that my sacrifice and yours may be acceptable to God, the almighty Father.}
+  \newcommand\sursum{Lift up your hearts.}
+  \newcommand\gratiasagamus{Let us give thanks to the Lord our God.}
+  \newcommand\mysterium{The mystery of faith.}
+  \newcommand\doxology{Through him, and with him, and in him, O God, almighty Father, in the unity of the Holy Spirit, all glory and honour is yours, for ever and ever.}
+  \newcommand\praeceptis{At the Saviour’s command and formed by divine teaching, we dare to say:}
+  \newcommand\liberanos{Deliver us, Lord, we pray, from every evil, graciously grant peace in our days, that, by the help of your mercy, we may be always free from sin and safe from all distress, as we await the blessed hope and the coming of our Saviour, Jesus Christ.}
+  \newcommand\dominejesuchriste{Lord Jesus Christ, who said to your Apostles: Peace I leave you, my peace I give you, look not on our sins, but on the faith of your Church, and graciously grant her peace and unity in accordance with your will. Who live and reign for ever and ever.}
+  \newcommand\paxdomini{The peace of the Lord be with you always.}
+  \newcommand\offerte{Let us offer each other the sign of peace.}
+  \newcommand\ecce{Behold the Lamb of God, behold him who takes away the sins of the world. Blessed are those called to the supper of the Lamb.}
+  \newcommand\benedicat{May almighty God bless you, the Father, and the Son, and the Holy Spirit.}
+  \newcommand\itemissaest{Go forth, the Mass is ended.}
+
+  % Congregation responses
+  \newcommand\etcum{
+    \begin{minipage}[t]{4.0cm}%
+      \gresetinitiallines{0}
+      \gregorioscore{and-with-your-spirit}
+    \end{minipage}%
+  }
+  \newcommand\etcumb{
+    \begin{minipage}[t]{4.0cm}%
+      \gresetinitiallines{0}
+      \gregorioscore{and-with-your-spirit-b}
+    \end{minipage}%
+  }
+  \newcommand\etcumc{
+    \begin{minipage}[t]{4.0cm}%
+      \gresetinitiallines{0}
+      \gregorioscore{and-with-your-spirit-c}
+    \end{minipage}%
+  }
+  \newcommand\confiteor{\textbf{I confess to almighty God\\and to you, my brothers and sisters,\\that I have greatly sinned,\\in my thoughts and in my words,\\in what I have done and in what I have failed to do,\\through my fault,\\through my fault,\\through my most grievous fault;\\therefore I ask blessed Mary ever-Virgin,\\all the Angels and Saints,\\and you, my brothers and sisters,\\to pray for me to the Lord our God.}}
+  \newcommand\kyrie{lord-have-mercy}
+  \newcommand\gloria{glory-to-god}
+  \newcommand\deogratiasa{
+    \begin{minipage}[t]{3.0cm}%
+      \gresetinitiallines{0}
+      \gregorioscore{thanks-be-to-god-a}
+    \end{minipage}%
+  }
+  \newcommand\deogratiasb{
+    \begin{minipage}[t]{3.0cm}%
+      \gresetinitiallines{0}
+      \gregorioscore{thanks-be-to-god-b}
+    \end{minipage}%
+  }
+  \newcommand\deogratiasc{
+    \begin{minipage}[t]{2.9cm}%
+      \gresetinitiallines{0}
+      \gregorioscore{thanks-be-to-god-c}
+    \end{minipage}%
+  }
+  \newcommand\gloriatibi{
+    \begin{minipage}[t]{3.6cm}%
+      \gresetinitiallines{0}
+      \gregorioscore{glory-to-you}
+    \end{minipage}%
+  }
+  \newcommand\laustibi{
+    \begin{minipage}[t]{5.3cm}%
+      \gresetinitiallines{0}
+      \gregorioscore{praise-to-you}
+    \end{minipage}%
+  }
+  \newcommand\credo{creed}
+
+  \newcommand\terogamus{
+    \begin{minipage}[t]{5.7cm}%
+      \gresetinitiallines{0}
+      \gregorioscore{lord-we-ask-you}
+    \end{minipage}%
+  }
+  \newcommand\benedictusdeus{\textbf{Blessed be God for ever.}}
+  \newcommand\suscipiat{\textbf{May the Lord accept the sacrifice at your hands for the praise and glory of his name, for our good and the good of all his holy Church.}}
+
+  \newcommand\habemus{
+    \begin{minipage}[t]{4.6cm}%
+      \gresetinitiallines{0}
+      \gregorioscore{we-lift-them}
+    \end{minipage}%
+  }
+  \newcommand\dignum{
+    \begin{minipage}[t]{3.5cm}%
+      \gresetinitiallines{0}
+      \gregorioscore{it-is-right}
+    \end{minipage}%
+  }
+  \newcommand\sanctus{holy}
+  \newcommand\mortem{
+    \begin{minipage}[t]{\textwidth}%
+      \gresetinitiallines{0}
+      \gregorioscore{we-proclaim}
+    \end{minipage}%
+  }
+  \newcommand\pater{
+    \begin{minipage}[t]{\textwidth}%
+      \gresetinitiallines{0}
+      \gregorioscore{our-father}
+    \end{minipage}%
+  }
+  \newcommand\quiatuum{
+    \begin{minipage}[t]{\textwidth}%
+      \gresetinitiallines{0}
+      \gregorioscore{for-the-kingdom}
+    \end{minipage}%
+  }
+  \newcommand\agnusdei{lamb-of-god}
+  \newcommand\dominenonsum{\textbf{Lord, I am not worthy that you should enter under my roof, but only say the word and my soul shall be healed.}}
+}
+
+\newcommand\priest{\emph{Priest: }}
+\newcommand\deacon{\emph{Deacon: }}
+\newcommand\reader{\emph{Reader: }}
+\newcommand\all{\emph{\textbf{All: }}}
+
+\newcommand\amen{
+  \begin{minipage}[t]{1.5cm}%
+    \gresetinitiallines{0}
+  \gregorioscore{amen}
+  \end{minipage}%
+}
+
+%\newcommand\amen{\textbf{Amen.}}
