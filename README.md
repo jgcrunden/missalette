@@ -19,7 +19,7 @@ sudo apt update && sudo apt install texlive-full make
 
 Or consult [TexLive documentation](https://www.tug.org/texlive/) for installation instructions
 
-## Generating pdf
+## Generating the Missalette
 
 For an English missalette:
 ```
@@ -33,7 +33,7 @@ make TRANSLATION=latin
 
 Both will generate a pdf file entitled `missalette.pdf`
 
-## Cleaning repo
+## Cleaning the repo
 Generating a pdf from LaTeX generates lots of intermediary files. These can be cleaned up with:
 ```
 make clean
