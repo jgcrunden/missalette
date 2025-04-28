@@ -1,5 +1,9 @@
 \usepackage{ifthen}
 
+\newcommand\chantdir{chant/}
+\newcommand\englishchantdir{\chantdir english/}
+\newcommand\latinchantdir{\chantdir latin/}
+
 \ifthenelse{\equal{\translation}{latin}}{
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   % LATIN PRAYERS
@@ -35,60 +39,60 @@
   \newcommand\etcum{
     \begin{minipage}[t]{4.0cm}%
       \gresetinitiallines{0}
-      \gregorioscore{etcum}
+      \gregorioscore{\latinchantdir etcum}
     \end{minipage}%
   }
   \newcommand\etcumb{
     \begin{minipage}[t]{4.0cm}%
       \gresetinitiallines{0}
-      \gregorioscore{etcum-b}
+      \gregorioscore{\latinchantdir etcum-b}
     \end{minipage}%
   }
   \newcommand\etcumc{
     \begin{minipage}[t]{4.2cm}%
       \gresetinitiallines{0}
-      \gregorioscore{etcum-c}
+      \gregorioscore{\latinchantdir etcum-c}
     \end{minipage}%
   }
 
   \newcommand\confiteor{\textbf{{Confíteor Deo omnipoténti\\et vobis, fratres,\\quia peccávi nimis\\cogitatióne, verbo,\\ópere et omissióne\\mea culpa,\\mea culpa,\\mea máxima culpa\\Ideo precor beátam Maríam semper Vírginem,\\omnes Angelos et Sanctos,\\et vos, fratres,\\oráre pro me ad Dóminum Deum nostrum.}}}
-  \newcommand\kyrie{kyrie}
-  \newcommand\gloria{gloria}
+  \newcommand\kyrie{\gregorioscore{\latinchantdir kyrie}}
+  \newcommand\gloria{\gregorioscore{\latinchantdir gloria}}
   \newcommand\deogratiasa{
     \begin{minipage}[t]{2.8cm}%
       \gresetinitiallines{0}
-      \gregorioscore{deo-gratias-first}
+      \gregorioscore{\latinchantdir deo-gratias-first}
     \end{minipage}%
   }
   \newcommand\deogratiasb{
     \begin{minipage}[t]{2.8cm}%
       \gresetinitiallines{0}
-      \gregorioscore{deo-gratias-second}
+      \gregorioscore{\latinchantdir deo-gratias-second}
     \end{minipage}%
   }
   \newcommand\deogratiasc{
     \begin{minipage}[t]{2.9cm}%
       \gresetinitiallines{0}
-      \gregorioscore{deo-gratias-third}
+      \gregorioscore{\latinchantdir deo-gratias-third}
     \end{minipage}%
   }
   \newcommand\gloriatibi{
     \begin{minipage}[t]{4.0cm}%
       \gresetinitiallines{0}
-      \gregorioscore{gloria-tibi-domine}
+      \gregorioscore{\latinchantdir gloria-tibi-domine}
     \end{minipage}%
   }
   \newcommand\laustibi{
     \begin{minipage}[t]{4.5cm}%
       \gresetinitiallines{0}
-      \gregorioscore{laus-tibi}
+      \gregorioscore{\latinchantdir laus-tibi}
     \end{minipage}%
   }
-  \newcommand\credo{credo}
+  \newcommand\credo{\gregorioscore{\latinchantdir credo}}
   \newcommand\terogamus{
     \begin{minipage}[t]{3.9cm}%
       \gresetinitiallines{0}
-      \gregorioscore{te-rogamus}
+      \gregorioscore{\latinchantdir te-rogamus}
     \end{minipage}%
   }
   \newcommand\benedictusdeus{\textbf{Benedíctus Deus in sǽcula.}}
@@ -96,35 +100,35 @@
   \newcommand\habemus{
     \begin{minipage}[t]{4.2cm}%
       \gresetinitiallines{0}
-      \gregorioscore{habemus}
+      \gregorioscore{\latinchantdir habemus}
     \end{minipage}%
   }
   \newcommand\dignum{
     \begin{minipage}[t]{3.9cm}%
       \gresetinitiallines{0}
-      \gregorioscore{dignum}
+      \gregorioscore{\latinchantdir dignum}
     \end{minipage}%
   }
-  \newcommand\sanctus{sanctus}
+  \newcommand\sanctus{\gregorioscore{\latinchantdir sanctus}}
   \newcommand\mortem{
     \begin{minipage}[t]{\textwidth}%
       \gresetinitiallines{0}
-      \gregorioscore{mortem}
+      \gregorioscore{\latinchantdir mortem}
     \end{minipage}%
   }
   \newcommand\pater{
     \begin{minipage}[t]{\textwidth}%
       \gresetinitiallines{0}
-      \gregorioscore{pater}
+      \gregorioscore{\latinchantdir pater}
     \end{minipage}%
   }
   \newcommand\quiatuum{
     \begin{minipage}[t]{\textwidth}%
       \gresetinitiallines{0}
-      \gregorioscore{quia-tuum}
+      \gregorioscore{\latinchantdir quia-tuum}
     \end{minipage}%
   }
-  \newcommand\agnusdei{agnus-dei}
+  \newcommand\agnusdei{\gregorioscore{\latinchantdir agnus-dei}}
   \newcommand\dominenonsum{\textbf{Dómine, non sum dignus, ut intres sub téctum meum, sed tantum dic verbo, et sanábitur ánima mea.}}
 }
 {
@@ -162,60 +166,60 @@
   \newcommand\etcum{
     \begin{minipage}[t]{4.0cm}%
       \gresetinitiallines{0}
-      \gregorioscore{and-with-your-spirit}
+      \gregorioscore{\englishchantdir and-with-your-spirit}
     \end{minipage}%
   }
   \newcommand\etcumb{
     \begin{minipage}[t]{4.0cm}%
       \gresetinitiallines{0}
-      \gregorioscore{and-with-your-spirit-b}
+      \gregorioscore{\englishchantdir and-with-your-spirit-b}
     \end{minipage}%
   }
   \newcommand\etcumc{
     \begin{minipage}[t]{4.0cm}%
       \gresetinitiallines{0}
-      \gregorioscore{and-with-your-spirit-c}
+      \gregorioscore{\englishchantdir and-with-your-spirit-c}
     \end{minipage}%
   }
   \newcommand\confiteor{\textbf{I confess to almighty God\\and to you, my brothers and sisters,\\that I have greatly sinned,\\in my thoughts and in my words,\\in what I have done and in what I have failed to do,\\through my fault,\\through my fault,\\through my most grievous fault;\\therefore I ask blessed Mary ever-Virgin,\\all the Angels and Saints,\\and you, my brothers and sisters,\\to pray for me to the Lord our God.}}
-  \newcommand\kyrie{lord-have-mercy}
-  \newcommand\gloria{glory-to-god}
+  \newcommand\kyrie{\gregorioscore{\englishchantdir lord-have-mercy}}
+  \newcommand\gloria{\gregorioscore{\englishchantdir glory-to-god}}
   \newcommand\deogratiasa{
     \begin{minipage}[t]{3.0cm}%
       \gresetinitiallines{0}
-      \gregorioscore{thanks-be-to-god-a}
+      \gregorioscore{\englishchantdir thanks-be-to-god-a}
     \end{minipage}%
   }
   \newcommand\deogratiasb{
     \begin{minipage}[t]{3.0cm}%
       \gresetinitiallines{0}
-      \gregorioscore{thanks-be-to-god-b}
+      \gregorioscore{\englishchantdir thanks-be-to-god-b}
     \end{minipage}%
   }
   \newcommand\deogratiasc{
     \begin{minipage}[t]{2.9cm}%
       \gresetinitiallines{0}
-      \gregorioscore{thanks-be-to-god-c}
+      \gregorioscore{\englishchantdir thanks-be-to-god-c}
     \end{minipage}%
   }
   \newcommand\gloriatibi{
     \begin{minipage}[t]{3.6cm}%
       \gresetinitiallines{0}
-      \gregorioscore{glory-to-you}
+      \gregorioscore{\englishchantdir glory-to-you}
     \end{minipage}%
   }
   \newcommand\laustibi{
     \begin{minipage}[t]{5.3cm}%
       \gresetinitiallines{0}
-      \gregorioscore{praise-to-you}
+      \gregorioscore{\englishchantdir praise-to-you}
     \end{minipage}%
   }
-  \newcommand\credo{creed}
+  \newcommand\credo{\gregorioscore{\englishchantdir creed}}
 
   \newcommand\terogamus{
     \begin{minipage}[t]{5.7cm}%
       \gresetinitiallines{0}
-      \gregorioscore{lord-we-ask-you}
+      \gregorioscore{\englishchantdir lord-we-ask-you}
     \end{minipage}%
   }
   \newcommand\benedictusdeus{\textbf{Blessed be God for ever.}}
@@ -224,35 +228,35 @@
   \newcommand\habemus{
     \begin{minipage}[t]{4.6cm}%
       \gresetinitiallines{0}
-      \gregorioscore{we-lift-them}
+      \gregorioscore{\englishchantdir we-lift-them}
     \end{minipage}%
   }
   \newcommand\dignum{
     \begin{minipage}[t]{3.5cm}%
       \gresetinitiallines{0}
-      \gregorioscore{it-is-right}
+      \gregorioscore{\englishchantdir it-is-right}
     \end{minipage}%
   }
-  \newcommand\sanctus{holy}
+  \newcommand\sanctus{\gregorioscore{\englishchantdir holy}}
   \newcommand\mortem{
     \begin{minipage}[t]{\textwidth}%
       \gresetinitiallines{0}
-      \gregorioscore{we-proclaim}
+      \gregorioscore{\englishchantdir we-proclaim}
     \end{minipage}%
   }
   \newcommand\pater{
     \begin{minipage}[t]{\textwidth}%
       \gresetinitiallines{0}
-      \gregorioscore{our-father}
+      \gregorioscore{\englishchantdir our-father}
     \end{minipage}%
   }
   \newcommand\quiatuum{
     \begin{minipage}[t]{\textwidth}%
       \gresetinitiallines{0}
-      \gregorioscore{for-the-kingdom}
+      \gregorioscore{\englishchantdir for-the-kingdom}
     \end{minipage}%
   }
-  \newcommand\agnusdei{lamb-of-god}
+  \newcommand\agnusdei{\gregorioscore{\englishchantdir lamb-of-god}}
   \newcommand\dominenonsum{\textbf{Lord, I am not worthy that you should enter under my roof, but only say the word and my soul shall be healed.}}
 }
 
@@ -264,7 +268,7 @@
 \newcommand\amen{
   \begin{minipage}[t]{1.5cm}%
     \gresetinitiallines{0}
-  \gregorioscore{amen}
+  \gregorioscore{\chantdir amen}
   \end{minipage}%
 }
 

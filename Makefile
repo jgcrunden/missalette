@@ -1,4 +1,9 @@
-TRANSLATION?=english
+TRANSLATION ?= english
+DIRECTORIES_TO_CLEAN  := $(shell find -not -path "./.git**" -not -path "./images**" -not -path "./examples" -type d)
+INTERMEDIATE_FILES_TYPES := *.pdf *.log *.aux *.gtex *.glog *.gaux
+TEMP_FILES := $(foreach DIR, $(DIRECTORIES_TO_CLEAN), $(addprefix $(DIR)/,$(INTERMEDIATE_FILES_TYPES)))
+
+
 all:
 ifeq ($(TRANSLATION),$(filter $(TRANSLATION),latin english))
 	@lualatex "\def\translation{$(TRANSLATION)}\input{missalette}"
@@ -9,4 +14,4 @@ else
 endif
 
 clean:
-	@rm -f *.pdf *.log *.aux *.gtex *.glog *.gaux
+	rm -rf $(TEMP_FILES)
