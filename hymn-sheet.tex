@@ -1,0 +1,78 @@
+\documentclass[12pt]{article}
+\usepackage[parfill]{parskip} % for supressing first line indent
+\usepackage[margin={1.5cm, 1cm}]{geometry}
+\usepackage{multicol} % creating columns
+\usepackage{verse} % rendering verses
+\usepackage[none]{hyphenat} % prevent splitting words over two lines
+\usepackage{helvet} % font
+%\renewcommand{\familydefault}{\sfdefault} % font
+%\setlength{\parskip}{16pt} % paragraph spacing
+\usepackage{fontspec}
+\setmainfont{Arial}
+\input{hymn-sheet-vars}
+
+\pagestyle{empty} % suppress page numbers
+\setlength{\vleftskip}{12pt} % decrease gap between verse numbers and verses
+
+\begin{document}
+\begin{center}
+\section*{\propername\\\massdate}
+
+\begin{tabular}{ |l|l| } 
+\hline
+\textbf{Readings} & Sunday Mass Cycle \sundaycycle : Weekday Mass Year \weekdaycycle : Psalter \psalterweek \\
+\textbf{Eucharistic Prayer} & \eucharisticprayer (or at priest’s choice) \\
+\hline
+\end{tabular}
+
+\subsection*{Opening Hymn}
+\end{center}
+
+\begin{multicols}{2}
+\openinghymn
+\end{multicols}
+
+\begin{center}
+\subsection*{Liturgy of the Word}
+\begin{tabular}{ |p{0.25\textwidth}|p{0.5\textwidth}| } 
+\hline
+\textbf{Entrance Antiphon} & \entranceantiphon\\ 
+\hline
+\textbf{First Reading} & \firstreading\\ 
+\hline
+\textbf{Psalm Response} & \responorialpsalm\\ 
+\hline
+\textbf{Second Reading} & \secondreading\\
+\hline
+\textbf{Gospel Acclamation} & \gospelacclamation\\
+\hline
+\textbf{Gospel} & \gospel\\
+\hline
+\textbf{Communion\newline Antiphon} & \communionantiphon\\
+\hline
+\end{tabular}
+\subsection*{Presentation of gifts}
+\end{center}
+\offertoryhymn
+\newpage
+
+\begin{center}
+\subsection*{Holy Communion Hymn I}
+\end{center}
+\begin{multicols}{2}
+\communionhymnone
+\end{multicols}
+\begin{center}
+\subsection*{Holy Communion Hymn II}
+\end{center}
+\begin{multicols}{2}
+\communionhymntwo
+\end{multicols}
+
+\begin{center}
+\subsection*{Concluding Hymn}
+\end{center}
+\begin{multicols}{2}
+\concludinghymn
+\end{multicols}
+\end{document}

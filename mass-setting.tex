@@ -5,12 +5,19 @@
 \usepackage{libertine}
 \usepackage[autocompile]{gregoriotex}
 \usepackage[center]{titlesec}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+
 
 \input{variables}
 
 \begin{document}
 
-\section*{Missal Setting}
+\textsc{\section*{Missal Setting}}
+\begin{center}
+\greseparator{4}{20}
+\end{center}
+\vspace{1cm}
 \subsection*{Lord Have Mercy}
 \kyrie
 
@@ -25,4 +32,8 @@
 
 \subsection*{Lamb of God}
 \agnusdei
+\vspace{2cm}
+\begin{center}
+\includegraphics[width=0.66\linewidth]{ihs}
+\end{center}
 \end{document}
