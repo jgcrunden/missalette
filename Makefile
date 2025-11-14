@@ -6,7 +6,7 @@ TEMP_FILES := $(foreach DIR, $(DIRECTORIES_TO_CLEAN), $(addprefix $(DIR)/,$(INTE
 
 all:
 ifeq ($(TRANSLATION),$(filter $(TRANSLATION),latin english))
-	@lualatex "\def\translation{$(TRANSLATION)}\input{booklet}"
+	@lualatex "\def\translation{$(TRANSLATION)}\input{requiem-missalette}"
 else
 	@echo $(TRANSLATION)
 	@echo unsupported translation for Mass
