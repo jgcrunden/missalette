@@ -1,17 +1,35 @@
-\documentclass[a5paper,twoside]{article}
+\documentclass[a5paper,oneside]{article}
 \usepackage[T1]{fontenc}
 \usepackage[]{geometry}
 \usepackage[parfill]{parskip}
 \usepackage{libertine}
 \usepackage[autocompile]{gregoriotex}
 \usepackage[center]{titlesec}
+\graphicspath{ {./images/} }
 
 \input{variables}
 
 \begin{document}
-\section*{The Introductory Rites}
+\begin{titlepage}
+	\begin{center}
+		\Huge VOTIVE REQUIEM MASS\par
+		\vspace{1cm}
+		\includegraphics[width=\linewidth]{holy-souls}\par
+		\vspace{1cm}
+		\Large \uppercase{with Gregorian chant Propers and Ordinary}
+	\end{center}
 
-\emph{The Introit chant or an appropriate hymn is sung as the ministers and servers process into the santuary. All stand.}
+\end{titlepage}
+\section*{\uppercase{The Introductory Rites}}
+
+\newcommand{\rubric}[1]{\textcolor{red}{\emph{#1}}}
+
+\rubric{The Introit chant is sung as the ministers and servers process into the santuary. All stand.}
+\gregorioscore{chant/latin/requiem/introit}
+\emph{Translation: Eternal rest give unto them, O Lord,
+and let perpetual light shine upon them.
+A hymn, O God, becometh Thee in Zion;
+and a vow shall be paid to Thee in Jerusalem.\\}
 
 \priest\sign
 
@@ -29,41 +47,49 @@
 
 \all{\textbf{Amen.}}
 
-\all\emph{The priest/cantor sings each invocation, and the congregation respond by repetition, or by written out response.}
+\rubric{The cantor sings each invocation, and the congregation respond by repetition, or by written out response.}
+\gregorioscore{chant/latin/requiem/kyrie}
+\emph{Translation: Lord have mercy. Christ has mercy. Lord have mercy.}
 
-\kyrie
-
+\pagebreak
 \priest\oremus
 
-\emph{The priest sings or says the collect, to which all respond:}
+\rubric{The priest says the collect, to which all respond:}
 
 \all{\textbf{Amen.}}
 
-\section*{The Liturgy of the Word}
+\section*{\uppercase{The Liturgy of the Word}}
 
-\emph{All sit for the readings}
+\rubric{All sit for the readings}
 
-\subsection*{First Reading}
+\subsection*{\uppercase{First Reading}}
 
-\emph{After the first reading}
-
-\reader\verbumdomini
-
-\all{\textbf{Thanks be to God.}}
-
-\emph{The Gradual or Responsorial Psalm is sung.}
-
-\subsection*{Second Reading}
-
-\emph{After the second reading}
+\rubric{After the first reading}
 
 \reader\verbumdomini
 
 \all{\textbf{Thanks be to God.}}
 
-\emph{The Alleluia, Tract or Gospel Acclamation is sung, at which point all stand.}
+\rubric{The Gradual is sung.}
+\gregorioscore{chant/latin/requiem/gradual}
+\emph{Translation: Eternal rest give unto them, O Lord;
+and let perpetual light shine upon them.
+The just shall be in everlasting remembrance;
+he shall not fear the evil hearing.}
 
-\subsection*{Gospel}
+\subsection*{\uppercase{Second Reading}}
+
+\rubric{After the second reading}
+
+\reader\verbumdomini
+
+\all{\textbf{Thanks be to God.}}
+
+\rubric{The Alleluia is sung, at which point all stand.}
+\gregorioscore{chant/latin/requiem/alleluia}
+\rubric{Translation: Alleluia. Out of the depths I cry to you Lord, O Lord hear my voice.}
+
+\subsection*{\uppercase{Gospel}}
 
 \deacon\greeting
 
@@ -73,35 +99,53 @@
 
 \all{\textbf{Glory to you, O Lord.}}
 
-\emph{At the end of the Gospel:}
+\rubric{At the end of the Gospel:}
 
 \deacon\verbumdominib
 
 \all{\textbf{Praise to you, Lord Jesus Christ.}}
 
-\emph{A homily may follow, at which point all sit}
-
-\emph{The Prayer of the Faithful. The reader will conclude each prayer with:}
+\rubric{A homily may follow, at which point all sit}
+\newpage
+\subsection*{\uppercase{The Prayers of the Faithful}}
+\rubric{The reader will conclude each prayer with:}
 
 \reader\exaudi
 
-\emph{To which all respond}
+\rubric{To which all respond}
 
 \all{\textbf{Lord graciously hear us.}}
 
-\section*{The Liturgy of the Eucharist}
+\section*{\uppercase{The Liturgy of the Eucharist}}
 
-\emph{The offertorium chant or an appropriate hymn is sung while the altar is prepared for the Liturgy of the Eucharist}
+\rubric{The offertorium chant is sung while the altar is prepared for the Liturgy of the Eucharist}
+\gregorioscore{chant/latin/requiem/offertorium}
+\emph{Translation: Lord Jesus Christ, King of glory,
+deliver the souls of all the faithful departed
+from the pains of hell and from the bottomless pit:
+deliver them from the lion's mouth,
+that Tartarus swallow them not up,
+that they fall not into darkness,
+but let the standard-bearer holy Michael
+lead them into that holy light:
+Which Thou didst promise of old to Abraham and to his seed.
+We offer to Thee, O Lord,
+sacrifices and prayers:
+do Thou receive them in behalf of those souls
+of whom we make memorial this day.
+\newpage
+Grant them, O Lord, to pass from death to that life,
+Which Thou didst promise of old to Abraham and to his seed.\\}
 
 \priest\oratefratres
 
 \all\suscipiat
 
-\emph{The priest sings or says the Prayer over the Offerings, to which all respond:}
+\rubric{The priest says the Prayer over the Offerings, to which all respond:}
 
 \all{\textbf{Amen.}}
 
-\subsection*{The Eucharistic Prayer}
+\subsection*{\uppercase{The Eucharistic Prayer}}
 
 \priest\greeting
 
@@ -114,12 +158,14 @@
 \priest\gratiasagamus
 
 \all\dignum
+\newpage
+\rubric{The priest says the Preface, at the end of which all sing:}
+\gregorioscore{chant/latin/requiem/sanctus}
+\emph{Translation: Holy, holy, holy, Lord God of Hosts.
+Heaven and earth are full of your glory. Hosanna in the highest.
+Blessed is he who comes in the name of Lord. Hosanna in the highest.}
 
-\emph{The priest sings or says the Preface, at the end of which all sing or say:}
-
-\all\sanctus
-
-\emph{All kneel}
+\rubric{All kneel}
 
 \priest\mysterium
 
@@ -127,17 +173,18 @@
 
 \mortem
 
-\emph{The Eucharist Prayer continues, concluding with:}
+\newpage
+\rubric{The Eucharist Prayer continues, concluding with:}
 
 \priest\doxology
 
-\all{\textbf{Amen.}}
+\all\amen
 
-\subsection*{The Communion Rite}
+\subsection*{\uppercase{The Communion Rite}}
 
 \priest\praeceptis
 
-\all{/textbf{Our Father, who art in heaven, Hallowed be Thy name; Thy kingdom come, Thy will be done on earth as it is in heaven. Give us this day our daily bread, and forgive us our trespasses, as we forgive those who trespasses against us; and lead us not into temptation, but deliver us from evil.}}
+\all{\textbf{Our Father, who art in heaven, Hallowed be Thy name; Thy kingdom come, Thy will be done on earth as it is in heaven. Give us this day our daily bread, and forgive us our trespasses, as we forgive those who trespasses against us; and lead us not into temptation, but deliver us from evil.}}
 
 \priest\liberanos
 
@@ -153,19 +200,32 @@
 
 \deacon\offerte
 
-\all\agnusdei
+\all\gregorioscore{chant/latin/requiem/agnus}
+\emph{Translation: Lamb of God, you take away the sins of the world, have mercy on us.
+Lamb of God, you take away the sins of the world, have mercy on us.
+Lamb of God, you take away the sins of the world, Grant us peace.}
 
+\newpage
 \priest\ecce
 
 \all\dominenonsum
 
-\emph{While communion is distributed to the faithful, the Communion chant or an appropriate hymn is sung.}
+\rubric{While communion is distributed to the faithful, the Communion chant is sung.}
+\gregorioscore{chant/latin/requiem/communio}
+\emph{Translation: May light eternal shine upon them, O Lord,
+with Thy Saints for evermore:
+for Thou art gracious.
+Eternal rest give to them, O Lord,
+and let perpetual light shine upon them:
+With Thy Saints for evermore,
+for Thou art gracious.}
 
-\section*{The Concluding Rites}
+\newpage
+\section*{\uppercase{The Concluding Rites}}
 
 \priest\oremus
 
-\emph{The priest sings or says the Prayer after Communion, to which all respond:}
+\rubric{The priest says the Prayer after Communion, to which all respond:}
 
 \all{\textbf{Amen.}}
 
@@ -182,4 +242,3 @@
 \all{\textbf{Thanks be to God.}}
 
 \end{document}
-
