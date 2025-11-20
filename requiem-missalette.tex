@@ -5,9 +5,18 @@
 \usepackage{libertine}
 \usepackage[autocompile]{gregoriotex}
 \usepackage[center]{titlesec}
+\usepackage{makecell}
 \graphicspath{ {./images/} }
 
 \input{variables}
+
+\newcommand{\dialoguetable}[2]{
+	\begin{tabular}{@{}p{1.25cm}p{8.75cm}}
+		#1 & #2 \\
+	\end{tabular}
+}
+
+\newcommand{\rubric}[1]{\textcolor{red}{\emph{#1}}}
 
 \begin{document}
 \begin{titlepage}
@@ -22,41 +31,28 @@
 \end{titlepage}
 \section*{\uppercase{The Introductory Rites}}
 
-\newcommand{\rubric}[1]{\textcolor{red}{\emph{#1}}}
-
 \rubric{The Introit chant is sung as the ministers and servers process into the santuary. All stand.}
 \gregorioscore{chant/latin/requiem/introit}
 \emph{Translation: Eternal rest give unto them, O Lord,
 and let perpetual light shine upon them.
 A hymn, O God, becometh Thee in Zion;
 and a vow shall be paid to Thee in Jerusalem.\\}
-
-\priest\sign
-
-\all{\textbf{Amen.}}
-
-\priest\greeting
-
-\all{\textbf{And with your spirit.}}
-
-\priest\penitentialintro
-
-\all\confiteor
-
-\priest\absolution
-
-\all{\textbf{Amen.}}
-
+\dialoguetable{\priest}{\sign}
+\dialoguetable{\all}{\textbf{Amen.}}
+\dialoguetable{\priest}{\greeting}
+\dialoguetable{\all}{\textbf{And with your spirit.}}
+\dialoguetable{\priest}{\penitentialintro}
+\dialoguetable{\all}{\confiteor}
+\dialoguetable{\priest}{\absolution}
+\dialoguetable{\all}{\textbf{Amen.}}
 \rubric{The cantor sings each invocation, and the congregation respond by repetition, or by written out response.}
 \gregorioscore{chant/latin/requiem/kyrie}
 \emph{Translation: Lord have mercy. Christ has mercy. Lord have mercy.}
 
-\pagebreak
-\priest\oremus
-
+\dialoguetable{\priest}{\oremus}
 \rubric{The priest says the collect, to which all respond:}
 
-\all{\textbf{Amen.}}
+\dialoguetable{\all}{\textbf{Amen.}}
 
 \section*{\uppercase{The Liturgy of the Word}}
 
@@ -66,9 +62,8 @@ and a vow shall be paid to Thee in Jerusalem.\\}
 
 \rubric{After the first reading}
 
-\reader\verbumdomini
-
-\all{\textbf{Thanks be to God.}}
+\dialoguetable{\reader}{\verbumdomini}
+\dialoguetable{\all}{\textbf{Thanks be to God.}}
 
 \rubric{The Gradual is sung.}
 \gregorioscore{chant/latin/requiem/gradual}
@@ -81,29 +76,24 @@ he shall not fear the evil hearing.}
 
 \rubric{After the second reading}
 
-\reader\verbumdomini
-
-\all{\textbf{Thanks be to God.}}
+\dialoguetable{\reader}{\verbumdomini}
+\dialoguetable{\all}{\textbf{Thanks be to God.}}
 
 \rubric{The Alleluia is sung, at which point all stand.}
 \gregorioscore{chant/latin/requiem/alleluia}
-\rubric{Translation: Alleluia. Out of the depths I cry to you Lord, O Lord hear my voice.}
+\emph{Translation: Alleluia. Out of the depths I cry to you Lord, O Lord hear my voice.}
 
 \subsection*{\uppercase{Gospel}}
 
-\deacon\greeting
-
-\all{\textbf{And with your spirit.}}
-
-\deacon\lectio
-
-\all{\textbf{Glory to you, O Lord.}}
+\dialoguetable{\deacon}{\greeting}
+\dialoguetable{\all}{\textbf{And with your spirit.}}
+\dialoguetable{\deacon}{\lectio}
+\dialoguetable{\all}{\textbf{Glory to you, O Lord.}}
 
 \rubric{At the end of the Gospel:}
 
-\deacon\verbumdominib
-
-\all{\textbf{Praise to you, Lord Jesus Christ.}}
+\dialoguetable{\deacon}{\verbumdominib}
+\dialoguetable{\all}{\textbf{Praise to you, Lord Jesus Christ.}}
 
 \rubric{A homily may follow, at which point all sit}
 \newpage
@@ -137,28 +127,27 @@ of whom we make memorial this day.
 Grant them, O Lord, to pass from death to that life,
 Which Thou didst promise of old to Abraham and to his seed.\\}
 
-\priest\oratefratres
-
-\all\suscipiat
+\dialoguetable{\priest}{\oratefratres}
+\dialoguetable{\all}{\suscipiat}
 
 \rubric{The priest says the Prayer over the Offerings, to which all respond:}
 
-\all{\textbf{Amen.}}
+\dialoguetable{\all}{\textbf{Amen.}}
 
 \subsection*{\uppercase{The Eucharistic Prayer}}
 
-\priest\greeting
+\dialoguetable{\priest}{\greeting}
 
-\all\etcumc
+\dialoguetable{\all}{\etcumc}
 
-\priest\sursum
+\dialoguetable{\priest}{\sursum}
 
-\all\habemus
+\dialoguetable{\all}{\habemus}
 
-\priest\gratiasagamus
+\dialoguetable{\priest}{\gratiasagamus}
 
-\all\dignum
-\newpage
+\dialoguetable{\all}{\dignum}
+\bigskip
 \rubric{The priest says the Preface, at the end of which all sing:}
 \gregorioscore{chant/latin/requiem/sanctus}
 \emph{Translation: Holy, holy, holy, Lord God of Hosts.
@@ -167,48 +156,41 @@ Blessed is he who comes in the name of Lord. Hosanna in the highest.}
 
 \rubric{All kneel}
 
-\priest\mysterium
-
+\newpage
+\dialoguetable{\priest}{\mysterium}
 \all
 
 \mortem
-
-\newpage
+\bigskip
 \rubric{The Eucharist Prayer continues, concluding with:}
 
-\priest\doxology
+\dialoguetable{\priest}{\doxology}
 
-\all\amen
+\dialoguetable{\all}{\amen}
 
 \subsection*{\uppercase{The Communion Rite}}
 
-\priest\praeceptis
+\dialoguetable{\priest}{\praeceptis}
+\dialoguetable{\all}{\textbf{Our Father, who art in heaven, Hallowed be Thy name; Thy kingdom come, Thy will be done on earth as it is in heaven. Give us this day our daily bread, and forgive us our trespasses, as we forgive those who trespasses against us; and lead us not into temptation, but deliver us from evil.}}
 
-\all{\textbf{Our Father, who art in heaven, Hallowed be Thy name; Thy kingdom come, Thy will be done on earth as it is in heaven. Give us this day our daily bread, and forgive us our trespasses, as we forgive those who trespasses against us; and lead us not into temptation, but deliver us from evil.}}
+\dialoguetable{\priest}{\liberanos}
+\dialoguetable{\all}{\textbf{For the kingdom, the power and the glory are yours now and forever.}}
 
-\priest\liberanos
+\dialoguetable{\priest}{\dominejesuchriste}
+\dialoguetable{\all}{\textbf{Amen.}}
 
-\all{\textbf{For the kingdom, the power and the glory are yours now and forever.}}
+\dialoguetable{\priest}{\paxdomini}
+\dialoguetable{\all}{\textbf{And with your spirit.}}
 
-\priest\dominejesuchriste
-
-\all{\textbf{Amen.}}
-
-\priest\paxdomini
-
-\all{\textbf{And with your spirit.}}
-
-\deacon\offerte
+\dialoguetable{\deacon}{\offerte}
 
 \all\gregorioscore{chant/latin/requiem/agnus}
 \emph{Translation: Lamb of God, you take away the sins of the world, have mercy on us.
 Lamb of God, you take away the sins of the world, have mercy on us.
 Lamb of God, you take away the sins of the world, Grant us peace.}
 
-\newpage
-\priest\ecce
-
-\all\dominenonsum
+\dialoguetable{\priest}{\ecce}
+\dialoguetable{\all}{\dominenonsum}
 
 \rubric{While communion is distributed to the faithful, the Communion chant is sung.}
 \gregorioscore{chant/latin/requiem/communio}
@@ -220,25 +202,21 @@ and let perpetual light shine upon them:
 With Thy Saints for evermore,
 for Thou art gracious.}
 
-\newpage
 \section*{\uppercase{The Concluding Rites}}
 
-\priest\oremus
-
+\dialoguetable{\priest}{\oremus}
+\bigskip
 \rubric{The priest says the Prayer after Communion, to which all respond:}
 
-\all{\textbf{Amen.}}
+\dialoguetable{\all}{\textbf{Amen.}}
 
-\priest\greeting
+\dialoguetable{\priest}{\greeting}
+\dialoguetable{\all}{\textbf{And with your spirit.}}
 
-\all{\textbf{And with your spirit.}}
+\dialoguetable{\priest}{\benedicat}
+\dialoguetable{\all}{\textbf{Amen.}}
 
-\priest\benedicat
-
-\all{\textbf{Amen.}}
-
-\deacon\itemissaest
-
-\all{\textbf{Thanks be to God.}}
+\dialoguetable{\deacon}{\itemissaest}
+\dialoguetable{\all}{\textbf{Thanks be to God.}}
 
 \end{document}
