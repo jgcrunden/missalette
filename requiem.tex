@@ -1,0 +1,23 @@
+\documentclass{scrartcl}
+%\usepackage{calc}
+\usepackage{mathptmx}
+\usepackage{anyfontsize}
+\usepackage{libertine}
+\usepackage[autocompile]{gregoriotex}
+\usepackage[]{geometry}
+
+
+\newsavebox{\titlebox}
+
+\newcommand{\Title}{\savebox{\titlebox}%
+  {\parbox{\textwidth}{\gregorioscore{chant/latin/requiem/introit}}}
+}
+
+\Title
+\geometry{paperwidth=\dimexpr\textwidth,
+		  paperheight=300pt,
+          margin=1.5mm}
+
+\begin{document}
+\usebox{\titlebox}
+\end{document}
