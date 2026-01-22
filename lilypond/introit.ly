@@ -51,9 +51,9 @@
 	}
 	\layout {
 		\context {
-      \Staff
-      % This hides the clef on every line except the first one
-      \override Clef.break-visibility = #all-invisible
-    }
+			\Staff
+			% This hides the clef on every line except the first one
+			\override Clef.break-visibility = #all-invisible
+		}
 	}
 }

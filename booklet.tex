@@ -1,12 +1,19 @@
-\documentclass{article}     
+\documentclass[a4paper]{article}     
 %-------------------------------------------------
 \usepackage{pdfpages}
-\usepackage[a4paper]{geometry}
+\usepackage[
+    paperwidth=210mm,
+    paperheight=297mm,
+    left=0mm, right=0mm,
+    top=0mm, bottom=0mm,
+    noheadfoot,
+    nomarginpar,
+]{geometry}
 \geometry{scale=1,centering}
 %-------------------------------------------------
 \begin{document}
 \includepdf[nup=1x2, landscape, booklet,
             pages={-},
-            offset=3mm 3mm,
-            delta=2mm 10mm]{requiem-missalette.pdf}
+            offset=0mm 0mm,
+            delta=0mm 0mm]{requiem-missalette.pdf}
 \end{document}
