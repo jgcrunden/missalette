@@ -1,3 +1,4 @@
+\version "2.25.31"
 kyrie = 
 <<
 	\relative {
