@@ -13,6 +13,7 @@
 \usepackage{tabularx}
 \graphicspath{ {./images/} }
 \usepackage{afterpage}
+\usepackage{lyluatex}
 
 \newcommand\blankpage{%
     \null
@@ -40,13 +41,19 @@
 		\includegraphics[width=\linewidth]{holy-souls}\par
 		\vspace{1cm}
 		\Large \uppercase{with Gregorian chant Propers and Ordinary}
+		%% For standard notation
+
+		\vspace{1cm}
+		\large \uppercase{Standard Notation}
+		%% For standard notation
 	\end{center}
 
 \end{titlepage}
 \section*{\uppercase{The Introductory Rites}}
 
 \rubric{All stand. The Introit chant is sung as the ministers and servers process into the santuary.}
-\gregorioscore{chant/latin/requiem/introit}
+%\gregorioscore{chant/latin/requiem/introit}
+\lilypondfile[staffsize=17]{lilypond/introit}
 \emph{Translation: Eternal rest give unto them, O Lord,
 and let perpetual light shine upon them.
 A hymn, O God, becometh Thee in Zion;
@@ -64,7 +71,8 @@ all flesh shall come to Thee.
 \dialoguetable{\priest}{\absolution}
 \dialoguetable{\all}{\textbf{Amen.}}
 \rubric{The cantor sings each invocation, and the congregation respond by repetition, or by written out response.}
-\gregorioscore{chant/latin/requiem/kyrie}
+%\gregorioscore{chant/latin/requiem/kyrie}
+\lilypondfile[staffsize=17]{lilypond/kyrie}
 \emph{Translation: Lord have mercy. Christ have mercy. Lord have mercy.}
 
 \dialoguetable{\priest}{\oremus}
@@ -78,7 +86,8 @@ all flesh shall come to Thee.
 \dialoguetable{\reader}{\verbumdomini}
 \dialoguetable{\all}{\textbf{Thanks be to God.}}
 \rubric{The Gradual is sung.}
-\gregorioscore{chant/latin/requiem/gradual}
+%\gregorioscore{chant/latin/requiem/gradual}
+\lilypondfile[staffsize=17]{lilypond/gradual}
 \emph{Translation: Eternal rest give unto them, O Lord;
 and let perpetual light shine upon them.
 The just shall be in everlasting remembrance;
@@ -89,15 +98,16 @@ he shall not fear the evil hearing.}
 \rubric{After the second reading.}
 \dialoguetable{\reader}{\verbumdomini}
 \dialoguetable{\all}{\textbf{Thanks be to God.}}
-\newpage
-\rubric{Outside of Lent}
-\rubric{All stand. The Alleluia is sung.}
-\gregorioscore{chant/latin/requiem/alleluia}
-\emph{Translation: Alleluia. Out of the depths I cry to Thee Lord, O Lord hear my voice.}
-
-\rubric{During Lent}
+%\newpage
+%\rubric{Outside of Lent}
+%\rubric{All stand. The Alleluia is sung.}
+%\gregorioscore{chant/latin/requiem/alleluia}
+%\emph{Translation: Alleluia. Out of the depths I cry to Thee Lord, O Lord hear my voice.}
+%
+%\rubric{During Lent}
 \rubric{All stand. The Tract is sung.}
-\gregorioscore{chant/latin/requiem/tractus}
+%\gregorioscore{chant/latin/requiem/tractus}
+\lilypondfile[staffsize=17]{lilypond/tractus}
 \emph{Translation: Absolve, O Lord,
 the souls of all the faithful departed
 from every bond of sin.
@@ -123,7 +133,8 @@ And enjoy the bliss of everlasting light.}
 \dialoguetable{\all}{\textbf{Lord graciously hear us.}}
 \section*{\uppercase{The Liturgy of the Eucharist}}
 \rubric{All sit. The offertorium chant is sung while the altar is prepared for the Liturgy of the Eucharist.}
-\gregorioscore{chant/latin/requiem/offertorium}
+%\gregorioscore{chant/latin/requiem/offertorium}
+\lilypondfile[staffsize=17]{lilypond/offertorium}
 \emph{Translation: Lord Jesus Christ, King of glory,
 deliver the souls of all the faithful departed
 from the pains of hell and from the bottomless pit:
@@ -164,7 +175,8 @@ Which Thou didst promise of old to Abraham and to his seed.}
 %\bigskip
 
 \rubric{The priest says the Preface, at the end of which all sing:}
-\gregorioscore{chant/latin/requiem/sanctus}
+%\gregorioscore{chant/latin/requiem/sanctus}
+\lilypondfile[staffsize=17]{lilypond/sanctus}
 \emph{Translation: Holy, holy, holy, Lord God of Hosts.
 Heaven and earth are full of your glory. Hosanna in the highest.
 Blessed is he who comes in the name of Lord. Hosanna in the highest.}
@@ -196,7 +208,8 @@ Blessed is he who comes in the name of Lord. Hosanna in the highest.}
 \dialoguetable{\all}{\textbf{And with your spirit.}}
 \dialoguetable{\priest}{\offerte}
 
-\all\gregorioscore{chant/latin/requiem/agnus}
+%\all\gregorioscore{chant/latin/requiem/agnus}
+\lilypondfile[staffsize=17]{lilypond/agnus-dei}
 \emph{Translation: Lamb of God, you take away the sins of the world, have mercy on us.
 Lamb of God, you take away the sins of the world, have mercy on us.
 Lamb of God, you take away the sins of the world, Grant us peace.}
@@ -206,7 +219,8 @@ Lamb of God, you take away the sins of the world, Grant us peace.}
 \dialoguetable{\all}{\dominenonsum}
 
 \rubric{While communion is distributed to the faithful, the Communion chant is sung.}
-\gregorioscore{chant/latin/requiem/communio}
+%\gregorioscore{chant/latin/requiem/communio}
+\lilypondfile[staffsize=17]{lilypond/communio}
 \emph{Translation: May light eternal shine upon them, O Lord,
 with Thy Saints for evermore:
 for Thou art gracious.
@@ -220,7 +234,6 @@ for Thou art gracious.}
 \dialoguetable{\priest}{\oremus}
 
 \rubric{All stand.}
-%\bigskip
 \rubric{The priest says the Prayer after Communion, to which all respond:}
 
 \dialoguetable{\all}{\textbf{Amen.}}

@@ -4,53 +4,135 @@
 	\relative {
 		\hide Staff.TimeSignature
 		\cadenzaOn
-		r8 d' c[ d] d-! d d[ c] d d[ f] d4( c) \bar "'"
+		r8 d' c[ d] d-! 
 		\allowBreak
-		f4 e8[ f g] e[ d]( f4) e8[ f d] e[ d] c[ d] d[ f] d4( c) \bar ","
+		d d[ c] d d[ f] d4( c) \bar "'"
 		\allowBreak
-		e8 c[ d] d d[ e] d d4 \bar "'"
+		f4 e8[ f g] e[ d]( f4) 
 		\allowBreak
-		d8[ e] d d-! e e[ d f] d[ e c-!] c c[ d f] e[ f] d--[ e-- d--] d4 \bar ","
+		e8[ f d] e[ d] 
 		\allowBreak
-		d8 c[ d] d-! d d--[ e\prall f-- d] d4 \bar "'"
+		c[ d] d[ f] d4( c) \bar ","
 		\allowBreak
-		e8 c-! d f-! e d--[ e-- d--] d4 r8 \bar "|"
+		e8 c[ d] d 
 		\allowBreak
-		e-! c d-! f f[ e] d-! e d-! g g4( f8) d[ c] d--[ e\prall f]( e4) \bar ","
+		d[ e] d d4 \bar "'"
 		\allowBreak
-		c8-! d f-! e d-! e d4 e8[ f d] c[ d] d4 \bar ","
+		d8[ e] d d-! 
 		\allowBreak
-		d8-! d c[ a] c d[ e] e4( d8--)[ e-\prall f-- d] d4 r8 \bar "|"
+		e e[ d f] 
 		\allowBreak
-		d4( e8--)[ f-\prall g] f[ e] d[ e] e4 e8[ d] d--[ e-\prall f-! e] d[ e d] c[ d] d4
+		d[ e c-!] c 
 		\allowBreak
-		d8-! d f[ e] f[ g] g4( f8) d[ c] d4( e) \bar "'"
+		c[ d f] e[ f] 
 		\allowBreak
-		c8[ e] e4( d8--)[ e-\prall f] e[ d] c[ e] f[ d] d4 r8 \bar "|"
+		d--[ e-- d--] d4 \bar ","
 		\allowBreak
-		d-! d c[ a] c d[ e] e[ d] f f[ e] d[ e] d4( c) \bar ","
+		d8 c[ d] d-! 
 		\allowBreak
-		f8[ g] e[ d] f[ g f] d4( c) d8[ f e] f[ g e] \bar "'"
+		d d--[ e\prall f-- d] d4 \bar "'"
 		\allowBreak
-		d[ f e] d[ e c] c--[ a] c--[ d-\prall e] f[ d] d4 \bar "||"
+		e8 c-! d f-! e 
 		\allowBreak
-		r8^℣ c d[ f] f4( e8) d[ c] d[ f] f4( e) \bar "'"
+		d--[ e-- d--] d4 r8 \bar "|"
 		\allowBreak
-		c8 d[ f] f d[ e d-! c] c4 \bar "'"
+		e-! c d-! f 
 		\allowBreak
-		e8[ d] e[ f] e[ d] c c[ d] d4 r8 \bar "|"
+		f[ e] d-! e d-! 
 		\allowBreak
-		d4( e8--)[ f-\prall g] f[ e] d[ e] e4 \bar "'"
+		g g4( f8) d[ c] 
 		\allowBreak
-		d8 d-! c d[ f] e[ f e] d4 d \bar ","
+		d--[ e\prall f]( e4) \bar ","
 		\allowBreak
-		g8[ f] g[ a g-!] f e[ f] d4 \bar "'"
+		c8-! d f-! e 
 		\allowBreak
-		d8 d[ c] d f[ e] d [ e] d[ c] c4 r8 \bar "|"
+		d-! e d4 e8[ f d] 
+		\allowBreak
+		c[ d] d4 \bar ","
+		\allowBreak
+		d8-! d c[ a] 
+		\allowBreak
+		c d[ e] 
+		\allowBreak
+		e4( d8--)[ e-\prall f-- d] d4 r8 \bar "|"
+		\allowBreak
+		d4( e8--)[ f-\prall g] 
+		\allowBreak
+		f[ e] d[ e] e4 
+		\allowBreak
+		e8[ d] d--[ e-\prall f-! e] 
+		\allowBreak
+		d[ e d] c[ d] d4
+		\allowBreak
+		d8-! d f[ e] 
+		\allowBreak
+		f[ g] g4( f8) 
+		\allowBreak
+		d[ c] d4( e) \bar "'"
+		\allowBreak
+		c8[ e] e4( d8--)[ e-\prall f] 
+		\allowBreak
+		e[ d] c[ e] 
+		\allowBreak
+		f[ d] d4 r8 \bar "|"
+		\allowBreak
+		d-! d c[ a] c 
+		\allowBreak
+		d[ e] e[ d] f 
+		\allowBreak
+		f[ e] d[ e] d4( c) \bar ","
+		\allowBreak
+		f8[ g] e[ d] 
+		\allowBreak
+		f[ g f] d4( c) 
+		\allowBreak
+		d8[ f e] f[ g e] \bar "'"
+		\allowBreak
+		d[ f e] d[ e c] 
+		\allowBreak
+		c--[ a] c--[ d-\prall e] 
+		\allowBreak
+		f[ d] d4 \bar "||"
+		\allowBreak
+		r8^℣ c d[ f] 
+		\allowBreak
+		f4( e8) d[ c] 
+		\allowBreak
+		d[ f] f4( e) \bar "'"
+		\allowBreak
+		c8 d[ f] f 
+		\allowBreak
+		d[ e d-! c] c4 \bar "'"
+		\allowBreak
+		e8[ d] e[ f] 
+		\allowBreak
+		e[ d] c c[ d] d4 r8 \bar "|"
+		\allowBreak
+		d4( e8--)[ f-\prall g] 
+		\allowBreak
+		f[ e] d[ e] e4 \bar "'"
+		\allowBreak
+		d8 d-! c d[ f] 
+		\allowBreak
+		e[ f e] d4 d \bar ","
+		\allowBreak
+		g8[ f] g[ a g-!] 
+		\allowBreak
+		f e[ f] d4 \bar "'"
+		\allowBreak
+		d8 d[ c] d f[ e] 
+		\allowBreak
+		d [ e] d[ c] c4 r8 \bar "|"
 		\allowBreak
 		d[ e] c c[ a] c c[ d] d4 \bar "'"
 		\allowBreak
-		f8-! e[ d-!]( d) c e[ f g] g4( f8) e[ d] e[ f e] d4 d r8 \bar "||"
+		f8-! e[ d-!]( d) 
+		\allowBreak
+		c e[ f g] g4( f8) 
+		\allowBreak
+		e[ d] e[ f e] 
+		\allowBreak
+		d4 d r8 \bar "||"
 		\allowBreak
 		d-! d c[ a] \bar "||"
 		\allowBreak
