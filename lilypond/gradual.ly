@@ -6,7 +6,7 @@
 			\cadenzaOn
 			g'8[ b a-!] a a4 
 			\allowBreak
-		a8[ c a b-! c a-! g] 
+		a8 c[ a b-! c a-! g] 
 			\allowBreak
 		b[ g a-! b] a4 \bar ","
 			\allowBreak
@@ -58,7 +58,7 @@
 			\allowBreak
 			d--[ e-\prall f-! e d-- e-\prall f-! e d] 
 			\allowBreak
-		d[ e] e[ c] e[ c]
+		d[ e] e[ c] e[ d]
 			\allowBreak
 			c4( a8) c4( a8) c4 
 			\allowBreak
@@ -66,7 +66,7 @@
 			\allowBreak
 			c[ d] e[ d c] 
 			\allowBreak
-		e[ b c] d[ a] a4 r8 \bar "|"
+		e[ d c] d[ a] a4 r8 \bar "|"
 			\allowBreak
 			c([ c]) c c-! c c c[ d] 
 			\allowBreak
@@ -89,8 +89,8 @@
     }
     \addlyrics {
 			Re -- _ _ qui -- em,* ae -- té -- _ _ _ _ _ _ _ _ _ nam
-			dó -- _ _ _ _ na _ _ é -- is, _ _ _ _
-			Dó -- _ _ _ _ mi -- _ _ ne: _ _ _ _ _ _ _ _ _ _ _
+			dó -- _ _ _ _ na _ _ é -- is, _ _ _
+			Dó -- _ _ _ _ mi -- _ _ ne: _ _ _ _ _ _ _ _ _ _ _ _
 			et lux per -- pé -- _ _ _ _ _ _ _ _ _ _ _ _ tu -- a _ _ _ _ _ _ _ _ _
 			lú -- _ _ _ _ _ _ ce -- at é -- _ _ _ is. _ _ _ _ _ _
 			_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
