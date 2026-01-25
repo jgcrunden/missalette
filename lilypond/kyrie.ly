@@ -32,7 +32,7 @@ kyrie =
     \addlyrics {
 		Ký -- _ _ _ ri -- e,* e -- _ _ _ _ lé -- i -- son.
 		Chrí -- _ _ _ ste, e -- _ _ _ _ lé -- i -- son.
-		Ký -- _ _ _ ri -- e,* e -- _ _ _ _ lé -- i -- son.
+		Ký -- _ _ _ ri -- e, e -- _ _ _ _ lé -- i -- son.
 		Ký -- ri -- e, _ _ _ _ _ _ _ e -- _ _ _ _ lé -- i -- son.
     }
 	\layout {
