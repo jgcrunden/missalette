@@ -39,7 +39,7 @@
 		\allowBreak
 	}
 	\addlyrics {
-		Re -- qui -- em* ae -- _ _ tér -- _ nam dó -- _ _ na _ é -- is, _ _ _ _ _ _ _
+		Re -- qui -- em \markup { \concat { \char ##x002A ae } } -- _ _ tér -- _ nam dó -- _ _ na _ é -- is, _ _ _ _ _ _ _
 		Dó -- mi _ _ _ _ _ ne: et _ lux _ _ per -- pé -- _ tu -- _ a
 		lú -- _ ce -- at _ _ _ _ _ _ _ é -- _ _ _ _ _ is. _
 		Te _ dé -- _ cet _ hým -- nus, Dé -- us, in Sí -- on,

@@ -89,7 +89,7 @@
 		a8--[ b-\prall c-! b a-! b] a4( g) \bar "||"
 	}
 	\addlyrics {
-		Ab -- sól -- _ _ _ ve,* _ Dó -- _ mi -- ne, _ _ _
+		Ab -- sól -- _ _ _ ve, _ \markup { \concat { \char ##x002A Dó } } -- _ mi -- ne, _ _ _
 		á -- _ ni -- mas óm -- ni -- um fi -- dé -- _ li -- um de -- func -- tó -- _ _ _ rum _ _ _ _ _ _
 		ab óm -- _ ni _ _ vín -- _ _ _ cu -- lo de -- li -- _ _ _ _ ctó -- _ _ rum. _ _ _ _ _ _ _
 		Et grá -- _ ti -- a tú -- a íl -- lis suc -- cur -- rén -- _ _ _ te, _ _ _ _ _ _
