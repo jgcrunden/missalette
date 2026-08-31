@@ -1,0 +1,167 @@
+\documentclass[a5paper,oneside]{article}
+\usepackage[T1]{fontenc}
+\usepackage[
+    paperwidth=148.5mm,
+    paperheight=210mm,
+]{geometry}
+\usepackage[parfill]{parskip}
+\usepackage{xcolor}
+%\usepackage{graphicx}
+\usepackage{libertine}
+\usepackage[autocompile]{gregoriotex}
+\usepackage[center]{titlesec}
+\usepackage{tabularx}
+%\graphicspath{ {./images/} }
+\usepackage{afterpage}
+%\usepackage{lyluatex}
+
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
+
+\input{variables}
+
+\newcommand{\dialoguetable}[2]{
+	\begin{tabularx}{\textwidth}{@{}p{1.25cm}X}
+		#1 & #2
+	\end{tabularx}
+}
+
+\newcommand{\rubric}[1]{\textcolor{red}{\emph{#1}}\par}
+
+\begin{document}
+%\afterpage{\blankpage}
+%\begin{titlepage}
+%	\begin{center}
+%		\Huge VOTIVE REQUIEM MASS\par
+%		\vspace{1cm}
+%		\includegraphics[width=\linewidth]{holy-souls}\par
+%		\vspace{1cm}
+%		\Large \uppercase{with Gregorian chant Propers and Ordinary}
+%		%% For standard notation
+%
+%		\vspace{1cm}
+%		\large \uppercase{Modern Notation}
+%		%% For standard notation
+%	\end{center}
+%
+%\end{titlepage}
+\section*{\uppercase{The Introductory Rites}}
+
+%\rubric{All stand. The Introit chant is sung as the ministers and servers process into the santuary.}
+
+\gregorioscore{chant/english/sign-of-the-cross}
+\gregorioscore{chant/english/the-lord-be-with-you}
+
+\subsection*{Penitential Act}
+\gregorioscore{chant/english/penitential-act-invitation}
+
+\rubric{Either the "I confess" is recited and "Kyrie" is sung, or else the following is sung}
+
+\gregorioscore{chant/english/penitential-act-c}
+
+\rubric{After either form, the absolution follows}
+\gregorioscore{chant/english/absolution}
+
+\subsection*{Gloria}
+\rubric{The Gloria is said/sung on Sundays outside Advent and Lent and on Solemnities and Feasts}
+
+\subsection*{Collect}
+\gregorioscore{chant/english/let-us-pray}
+
+{\gresetinitiallines{0}
+\rubric{The collect concludes as follows}
+\gregorioscore{chant/english/collect-conclusion}}
+
+\section*{\uppercase{The Liturgy of the Word}}
+\subsection*{First Reading}
+\rubric{After the first reading.}
+\gregorioscore{chant/english/the-word-of-the-lord-a}
+
+\subsection*{Responsorial Psalm}
+
+\subsection*{Second Reading}
+\rubric{After the second reading.}
+\gregorioscore{chant/english/the-word-of-the-lord-b}
+
+\subsection*{Gospel Acclamation}
+\gregorioscore{chant/english/alleluia}
+\rubric{Or during Lent}
+\gregorioscore{chant/english/lenten-acclamation}
+
+\subsection*{Gospel}
+
+\gregorioscore{chant/english/gospel-dialogue}
+\gregorioscore{chant/english/the-gospel-of-the-lord}
+
+\subsection*{Creed}
+\gregorioscore{chant/english/creed.gabc}
+
+\subsection*{The Prayers of the Faithful}
+\rubric{Each prayer will conclude with}
+
+\gregorioscore{chant/english/prayer-of-the-faithful}
+
+\section*{\uppercase{The Liturgy of the Eucharist}}
+\gregorioscore{chant/english/pray-brethen}
+
+\subsection*{Prayer over the Offerings}
+\rubric{The prayer over the Offerings concludes with the following}
+\gregorioscore{chant/english/prayer-over-the-offerings}
+
+\subsection*{The Eucharistic Prayer}
+\gregorioscore{chant/english/preface-dialogue}
+
+\rubric{The priest sings or says the Preface}
+
+\subsection*{Sanctus}
+
+\subsection*{Eucharistic Prayer}
+\gregorioscore{chant/english/mystery-of-faith}
+
+\subsection*{Doxology}
+\rubric{The Doxology concludes with the following}
+{\gresetinitiallines{0}
+\gregorioscore{chant/english/doxology}}
+
+\subsection*{The Communion Rite}
+
+%\dialoguetable{\priest}{\praeceptis}
+\gregorioscore{chant/english/at-the-saviours-command}
+\subsection*{The Lord's Prayer}
+\gregorioscore{chant/english/our-father}
+
+\gregorioscore{chant/english/embolism}
+
+\subsection*{The Sign of Peace}
+\gregorioscore{chant/english/lord-jesus-christ}
+%\dialoguetable{\priest}{\dominejesuchriste}
+%\dialoguetable{\all}{\textbf{Amen.}}
+%\dialoguetable{\priest}{\paxdomini}
+%\dialoguetable{\all}{\textbf{And with your spirit.}}
+%\dialoguetable{\priest}{\offerte}
+
+%\rubric{All kneel/sit.}
+%\dialoguetable{\priest}{\ecce}
+%\dialoguetable{\all}{\dominenonsum}
+
+%\rubric{While communion is distributed to the faithful, the Communion chant is sung.}
+%\gregorioscore{chant/latin/requiem/communio}
+
+\section*{\uppercase{The Concluding Rites}}
+
+%\dialoguetable{\priest}{\oremus}
+
+%\rubric{All stand.}
+%\rubric{The priest says the Prayer after Communion, to which all respond:}
+
+%\dialoguetable{\all}{\textbf{Amen.}}
+\dialoguetable{\priest}{\greeting}
+\dialoguetable{\all}{\textbf{And with your spirit.}}
+\dialoguetable{\priest}{\benedicat}
+\dialoguetable{\all}{\textbf{Amen.}}
+\dialoguetable{\priest}{\itemissaest}
+\dialoguetable{\all}{\textbf{Thanks be to God.}}
+\end{document}
