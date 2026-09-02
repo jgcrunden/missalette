@@ -2,18 +2,14 @@
 %-------------------------------------------------
 \usepackage{pdfpages}
 \usepackage[
-    paperwidth=210mm,
-    paperheight=297mm,
-    left=0mm, right=0mm,
-    top=0mm, bottom=0mm,
+    margin=0mm,
     noheadfoot,
     nomarginpar,
 ]{geometry}
-\geometry{scale=1,centering}
 %-------------------------------------------------
 \begin{document}
-\includepdf[nup=1x2, landscape, booklet,
+\includepdf[nup=2x1, landscape, booklet,
             pages={-},
             offset=0mm 0mm,
-            delta=0mm 0mm]{requiem-missalette.pdf}
+            delta=0mm 0mm]{dialogue.pdf}
 \end{document}
