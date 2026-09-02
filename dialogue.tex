@@ -3,17 +3,17 @@
 \usepackage[
     paperwidth=148.5mm,
     paperheight=210mm,
+    margin=20mm,
 ]{geometry}
 \usepackage[parfill]{parskip}
 \usepackage{xcolor}
-%\usepackage{graphicx}
+\usepackage{graphicx}
 \usepackage{libertine}
 \usepackage[autocompile]{gregoriotex}
 \usepackage[center]{titlesec}
 \usepackage{tabularx}
-%\graphicspath{ {./images/} }
+\graphicspath{ {./images/} }
 \usepackage{afterpage}
-%\usepackage{lyluatex}
 
 \newcommand\blankpage{%
     \null
@@ -33,21 +33,16 @@
 
 \begin{document}
 %\afterpage{\blankpage}
-%\begin{titlepage}
-%	\begin{center}
-%		\Huge VOTIVE REQUIEM MASS\par
-%		\vspace{1cm}
-%		\includegraphics[width=\linewidth]{holy-souls}\par
-%		\vspace{1cm}
-%		\Large \uppercase{with Gregorian chant Propers and Ordinary}
-%		%% For standard notation
-%
-%		\vspace{1cm}
-%		\large \uppercase{Modern Notation}
-%		%% For standard notation
-%	\end{center}
-%
-%\end{titlepage}
+\begin{titlepage}
+	\begin{center}
+        \Huge \uppercase{Sung Order of Mass}\par
+		\vspace{1cm}
+		\includegraphics[width=\linewidth]{ad-evangelist}\par
+		\vspace{1cm}
+		\Large \uppercase{English chant}
+	\end{center}
+\end{titlepage}
+\rubric{The Entrance Chant or an appropriate hymn is sung while the celebrant and other ministers process in.}
 \section*{\uppercase{The Introductory Rites}}
 
 %\rubric{All stand. The Introit chant is sung as the ministers and servers process into the santuary.}
@@ -58,21 +53,21 @@
 \subsection*{Penitential Act}
 \gregorioscore{chant/english/penitential-act-invitation}
 
-\rubric{Either the "I confess" is recited and "Kyrie" is sung, or else the following is sung}
+\rubric{The "Confiteor" is recited and "Kyrie" is sung, or else the following is sung.}
 
 \gregorioscore{chant/english/penitential-act-c}
 
-\rubric{After either form, the absolution follows}
+\rubric{After either form, the absolution follows.}
 \gregorioscore{chant/english/absolution}
 
 \subsection*{Gloria}
-\rubric{The Gloria is said/sung on Sundays outside Advent and Lent and on Solemnities and Feasts}
+\rubric{The Gloria is said/sung on Sundays outside Advent and Lent and on Solemnities and Feasts.}
 
 \subsection*{Collect}
 \gregorioscore{chant/english/let-us-pray}
 
 {\gresetinitiallines{0}
-\rubric{The collect concludes as follows}
+\rubric{The collect concludes as follows.}
 \gregorioscore{chant/english/collect-conclusion}}
 
 \section*{\uppercase{The Liturgy of the Word}}
@@ -81,12 +76,14 @@
 \gregorioscore{chant/english/the-word-of-the-lord-a}
 
 \subsection*{Responsorial Psalm}
+\rubric{The Responsorial Psalm is sung or said, or the Gradual is sung.}
 
 \subsection*{Second Reading}
 \rubric{After the second reading.}
 \gregorioscore{chant/english/the-word-of-the-lord-b}
 
 \subsection*{Gospel Acclamation}
+\rubric{The relevant Gospel Acclamation is sung, or the proper Alleluia/Tract is sung. The Gospel Acclamation may be  preceeded by a Sequence on specific feast days.}
 \gregorioscore{chant/english/alleluia}
 \rubric{Or during Lent}
 \gregorioscore{chant/english/lenten-acclamation}
@@ -94,6 +91,7 @@
 \subsection*{Gospel}
 
 \gregorioscore{chant/english/gospel-dialogue}
+\rubric{After the Gospel.}
 \gregorioscore{chant/english/the-gospel-of-the-lord}
 
 \subsection*{Creed}
@@ -102,33 +100,38 @@
 \subsection*{The Prayers of the Faithful}
 \rubric{Each prayer will conclude with}
 
+\gregorioscore{chant/english/be-pleased-to-hear-us}
+
+\rubric{Or alternatively}
+
 \gregorioscore{chant/english/prayer-of-the-faithful}
 
 \section*{\uppercase{The Liturgy of the Eucharist}}
+\rubric{The Offertory chant or an appropriate hymn is sung. The priest prays the offertory prayers over the bread and wine, either silently or aloud.}
 \gregorioscore{chant/english/pray-brethen}
 
 \subsection*{Prayer over the Offerings}
-\rubric{The prayer over the Offerings concludes with the following}
+\rubric{The prayer over the Offerings concludes with the following:}
 \gregorioscore{chant/english/prayer-over-the-offerings}
 
 \subsection*{The Eucharistic Prayer}
 \gregorioscore{chant/english/preface-dialogue}
 
-\rubric{The priest sings or says the Preface}
+\rubric{The priest sings or says the Preface.}
 
 \subsection*{Sanctus}
+\rubric{The Sanctus is sung or said.}
 
 \subsection*{Eucharistic Prayer}
 \gregorioscore{chant/english/mystery-of-faith}
 
 \subsection*{Doxology}
-\rubric{The Doxology concludes with the following}
+\rubric{The Doxology concludes with the following:}
 {\gresetinitiallines{0}
 \gregorioscore{chant/english/doxology}}
 
 \subsection*{The Communion Rite}
 
-%\dialoguetable{\priest}{\praeceptis}
 \gregorioscore{chant/english/at-the-saviours-command}
 \subsection*{The Lord's Prayer}
 \gregorioscore{chant/english/our-father}
@@ -137,31 +140,39 @@
 
 \subsection*{The Sign of Peace}
 \gregorioscore{chant/english/lord-jesus-christ}
-%\dialoguetable{\priest}{\dominejesuchriste}
-%\dialoguetable{\all}{\textbf{Amen.}}
-%\dialoguetable{\priest}{\paxdomini}
-%\dialoguetable{\all}{\textbf{And with your spirit.}}
-%\dialoguetable{\priest}{\offerte}
 
-%\rubric{All kneel/sit.}
-%\dialoguetable{\priest}{\ecce}
-%\dialoguetable{\all}{\dominenonsum}
+\gregorioscore{chant/english/the-peace-of-the-lord}
+\rubric{The deacon or priest sings:}
+\gregorioscore{chant/english/let-us-offer}
 
-%\rubric{While communion is distributed to the faithful, the Communion chant is sung.}
-%\gregorioscore{chant/latin/requiem/communio}
+\subsection*{Agnus Dei}
+\rubric{The Agnus Dei is sung or said.}
+
+\gregorioscore{chant/english/behold-the-lamb-of-god}
+
+\subsection*{Communion}
+\rubric{While communion is distributed to the faithful, the Communion chant is sung or an appropriate hymn.}
+
+\subsection*{Prayer after Communion}
+\gregorioscore{chant/english/let-us-pray}
+{\gresetinitiallines{0}
+\rubric{The collect concludes as follows.}
+\gregorioscore{chant/english/prayer-over-the-offerings}
+}
 
 \section*{\uppercase{The Concluding Rites}}
+\gregorioscore{chant/english/final-blessing}
 
-%\dialoguetable{\priest}{\oremus}
+\rubric{The deacon or priest sings the dismissal.}
+\gregorioscore{chant/english/go-forth}
+\rubric{Alternatively during Eastertide.}
+\gregorioscore{chant/english/go-forth-easter}
 
-%\rubric{All stand.}
-%\rubric{The priest says the Prayer after Communion, to which all respond:}
+\section*{\uppercase{Appendix}}
+\subsection*{Sprinkling of Holy Water}
+\rubric{For use outside of Eastertide.}
+\gregorioscore{chant/english/sprinkle-me}
 
-%\dialoguetable{\all}{\textbf{Amen.}}
-\dialoguetable{\priest}{\greeting}
-\dialoguetable{\all}{\textbf{And with your spirit.}}
-\dialoguetable{\priest}{\benedicat}
-\dialoguetable{\all}{\textbf{Amen.}}
-\dialoguetable{\priest}{\itemissaest}
-\dialoguetable{\all}{\textbf{Thanks be to God.}}
+\rubric{During Eastertide.}
+\gregorioscore{chant/english/i-saw-water}
 \end{document}
